@@ -14,8 +14,9 @@ import {
 import { HomeOutlined, QuestionCircleOutlined } from "@ant-design/icons";
 import { Line } from "@ant-design/charts";
 import { useState, useEffect } from "react";
-import { readAllCSVFiles, citys } from "./utils";
+import { citys } from "./utils";
 import dayjs from "dayjs";
+import { cityDatas } from "./data";
 
 const { Text } = Typography;
 
@@ -105,9 +106,7 @@ export const HomePage = () => {
   useEffect(() => {
     const loadData = async () => {
       try {
-        setLoading(true);
-        const data = await readAllCSVFiles();
-        setAllData(data);
+        setAllData(cityDatas);
       } catch (error) {
         console.error("加载数据失败:", error);
       } finally {
@@ -192,6 +191,7 @@ export const HomePage = () => {
       );
       downTop10.forEach(([city, data]) => {
         downTop10Data.push({
+          key: city,
           city,
           cur: data.cur,
         });
@@ -284,6 +284,7 @@ export const HomePage = () => {
                 dataSource={tableData}
                 columns={columns}
                 pagination={false}
+                key="tableData"
               />
             </Card>
           </Col>
@@ -296,6 +297,7 @@ export const HomePage = () => {
                 dataSource={downTop10Data}
                 columns={downTop10Columns}
                 pagination={false}
+                key="downTop10Data"
               />
             </Card>
           </Col>
