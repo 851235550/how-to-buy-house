@@ -23,7 +23,7 @@
 
 **站点**: [点我预览](https://how-to-buy-house.vercel.app)
 
-![购房指北预览1](https://github.com/user-attachments/assets/47d37538-b0ec-4387-a34a-c3796944e9be)
+![购房指北预览1](https://github.com/user-attachments/assets/03ab075f-bfad-468c-96b2-251ffa52ec71)
 ![购房指北预览2](https://github.com/user-attachments/assets/9676298a-13a1-4fe6-9630-fe69add2f116)
 
 ## 🚀 快速开始
