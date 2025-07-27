@@ -12,6 +12,7 @@ import { HomePage } from "./Pages/Home";
 import { AboutPage } from "./Pages/About";
 import Sider from "antd/es/layout/Sider";
 import { useState } from "react";
+import { CityPage } from "./Pages/City";
 
 const { Content, Footer } = Layout;
 
@@ -26,14 +27,36 @@ function AppLayout() {
       label: "Home",
     },
     {
+      key: "city",
+      label: "City",
+    },
+    {
       key: "about",
       label: "About",
     },
   ];
 
+  // 根据当前路径获取选中的菜单项
+  const getSelectedKey = () => {
+    const path = location.pathname;
+    if (path === "/" || path === "/home") {
+      return "home";
+    }
+    if (path === "/city") {
+      return "city";
+    }
+    if (path === "/about") {
+      return "about";
+    }
+    return "home";
+  };
+
   const getBreadcrumbItems = () => {
     if (location.pathname === "/home" || location.pathname === "/") {
       return [{ title: "Dashboard" }];
+    }
+    if (location.pathname === "/city") {
+      return [{ title: "City" }];
     }
     if (location.pathname === "/about") {
       return [{ title: "About" }];
@@ -63,7 +86,7 @@ function AppLayout() {
           <div className="demo-logo-vertical" />
           <Menu
             theme="light"
-            defaultSelectedKeys={["home"]}
+            selectedKeys={[getSelectedKey()]}
             mode="inline"
             items={menus}
             onClick={(e) => {
@@ -96,6 +119,7 @@ function App() {
         { index: true, element: <Navigate to="/home" /> },
         { path: "home", element: <HomePage /> },
         { path: "about", element: <AboutPage /> },
+        { path: "city", element: <CityPage /> },
       ],
     },
     {
@@ -105,6 +129,10 @@ function App() {
     {
       path: "/about",
       element: <AboutPage />,
+    },
+    {
+      path: "/city",
+      element: <CityPage />,
     },
   ]);
 

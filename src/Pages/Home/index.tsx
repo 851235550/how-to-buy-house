@@ -20,6 +20,8 @@ import { cityDatas } from "./data";
 
 const { Text } = Typography;
 
+const maxSelectedCities = 5;
+
 const columns = [
   {
     title: "城市",
@@ -211,8 +213,6 @@ export const HomePage = () => {
     shapeField: "smooth",
     scale: {
       y: {
-        domainMin: 70, // 纵轴起始值
-        domainMax: 110, // 纵轴最大值
         nice: true, // 自动调整刻度为美观的数值
       },
     },
@@ -257,19 +257,19 @@ export const HomePage = () => {
                     value={selectedCities}
                     onChange={(values) => {
                       // 限制最多选择5个城市
-                      if (values.length <= 5) {
+                      if (values.length <= maxSelectedCities) {
                         setSelectedCities(values);
                       } else {
                         // 如果超过5个，则移除第一个，并添加新的
-                        const newValues = values.slice(1, 5);
+                        const newValues = values.slice(1, maxSelectedCities);
                         newValues.push(values[values.length - 1]);
                         setSelectedCities(newValues);
                       }
                     }}
                     style={{ width: 450 }}
-                    placeholder="选择城市（最多5个）"
-                    maxTagCount={5}
-                    maxTagTextLength={5}
+                    placeholder={`选择城市（最多${maxSelectedCities}个）`}
+                    maxTagCount={maxSelectedCities}
+                    maxTagTextLength={maxSelectedCities}
                     options={citys.map((city) => ({
                       label: city,
                       value: city,
