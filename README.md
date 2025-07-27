@@ -25,6 +25,7 @@
 
 ![购房指北预览1](https://github.com/user-attachments/assets/03ab075f-bfad-468c-96b2-251ffa52ec71)
 ![购房指北预览2](https://github.com/user-attachments/assets/9676298a-13a1-4fe6-9630-fe69add2f116)
+![购房指北预览3](https://github.com/user-attachments/assets/a460a653-a7b0-4e2f-8efa-7643a9b5126c)
 
 ## 🚀 快速开始
 
@@ -174,6 +175,7 @@ how-to-buy-house/
 - 项目地址: [GitHub Repository](https://github.com/your-username/how-to-buy-house)
 - 问题反馈: [Issues](https://github.com/your-username/how-to-buy-house/issues)
 - 功能建议: [Discussions](https://github.com/your-username/how-to-buy-house/discussions)
+- 公众号: [](https://mp.weixin.qq.com/s/NGOb4884aEXGB8AkN7lPdw)
 
 ---
 

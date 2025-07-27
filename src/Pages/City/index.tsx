@@ -1,7 +1,7 @@
 import { Line } from "@ant-design/charts";
 import { Card, Col, Flex, Row, Select, Spin } from "antd";
 import { useEffect, useState } from "react";
-import { allCityPriceData, readCityCSVData } from "./data";
+import { allCityPriceData } from "./data";
 import { Typography } from "antd";
 
 const { Text } = Typography;
