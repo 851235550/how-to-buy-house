@@ -1876,12 +1876,167 @@ const guangzhouData = {
   ],
 };
 
+const yantaiData = {
+  city: "烟台",
+  data: [
+    {
+      month: "202207",
+      price: 9473,
+    },
+    {
+      month: "202208",
+      price: 9367,
+    },
+    {
+      month: "202209",
+      price: 9440,
+    },
+    {
+      month: "202210",
+      price: 9450,
+    },
+    {
+      month: "202211",
+      price: 9325,
+    },
+    {
+      month: "202212",
+      price: 9268,
+    },
+    {
+      month: "202301",
+      price: 9254,
+    },
+    {
+      month: "202302",
+      price: 9347,
+    },
+    {
+      month: "202303",
+      price: 9266,
+    },
+    {
+      month: "202304",
+      price: 9074,
+    },
+    {
+      month: "202305",
+      price: 8733,
+    },
+    {
+      month: "202306",
+      price: 8587,
+    },
+    {
+      month: "202307",
+      price: 8447,
+    },
+    {
+      month: "202308",
+      price: 8106,
+    },
+    {
+      month: "202309",
+      price: 7837,
+    },
+    {
+      month: "202310",
+      price: 7744,
+    },
+    {
+      month: "202311",
+      price: 7588,
+    },
+    {
+      month: "202312",
+      price: 7499,
+    },
+    {
+      month: "202401",
+      price: 7519,
+    },
+    {
+      month: "202402",
+      price: 7550,
+    },
+    {
+      month: "202403",
+      price: 7575,
+    },
+    {
+      month: "202404",
+      price: 7457,
+    },
+    {
+      month: "202405",
+      price: 7345,
+    },
+    {
+      month: "202406",
+      price: 7192,
+    },
+    {
+      month: "202407",
+      price: 7129,
+    },
+    {
+      month: "202408",
+      price: 7059,
+    },
+    {
+      month: "202409",
+      price: 6986,
+    },
+    {
+      month: "202410",
+      price: 6971,
+    },
+    {
+      month: "202411",
+      price: 7002,
+    },
+    {
+      month: "202412",
+      price: 6972,
+    },
+    {
+      month: "202501",
+      price: 6951,
+    },
+    {
+      month: "202502",
+      price: 6958,
+    },
+    {
+      month: "202503",
+      price: 6883,
+    },
+    {
+      month: "202504",
+      price: 6771,
+    },
+    {
+      month: "202505",
+      price: 6693,
+    },
+    {
+      month: "202506",
+      price: 6677,
+    },
+    {
+      month: "202507",
+      price: 6637,
+    },
+  ],
+};
+
 export const allCityPriceData = [
   beijingData,
   shanghaiData,
   tianjinData,
   jinanData,
   qingdaoData,
+  yantaiData,
   suzhouData,
   hangzhouData,
   nanjingData,

@@ -175,7 +175,7 @@ how-to-buy-house/
 - 项目地址: [GitHub Repository](https://github.com/your-username/how-to-buy-house)
 - 问题反馈: [Issues](https://github.com/your-username/how-to-buy-house/issues)
 - 功能建议: [Discussions](https://github.com/your-username/how-to-buy-house/discussions)
-- 公众号: [](https://mp.weixin.qq.com/s/NGOb4884aEXGB8AkN7lPdw)
+- 公众号: [个人文章](https://mp.weixin.qq.com/s/NGOb4884aEXGB8AkN7lPdw)
 
 ---
 
