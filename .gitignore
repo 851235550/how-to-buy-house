@@ -26,3 +26,6 @@ dist-ssr
 # custom
 .env
 oridata
+
+# nvm
+.nvmrc
