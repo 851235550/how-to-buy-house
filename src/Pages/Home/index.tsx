@@ -62,6 +62,8 @@ const downTop10Columns = [
   {
     title: "城市",
     dataIndex: "city",
+    sorter: (a: any, b: any) => a.city.localeCompare(b.city),
+    defaultSortOrder: "ascend",
   },
   {
     title: (
@@ -78,6 +80,7 @@ const downTop10Columns = [
   {
     title: "涨跌幅",
     dataIndex: "cur",
+    sorter: (a: any, b: any) => a.cur - b.cur,
     render: (text: number) => {
       const down = Number((text - 100).toFixed(2));
       if (down < 0) {

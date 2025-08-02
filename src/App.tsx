@@ -16,6 +16,14 @@ import { CityPage } from "./Pages/City";
 
 const { Content, Footer } = Layout;
 
+const siderStyle: React.CSSProperties = {
+  width: '200px',
+  height: '100vh',
+  position: 'sticky',
+  top: 0,
+  bottom: 0,
+};
+
 // 主应用组件
 function AppLayout() {
   const navigate = useNavigate();
@@ -78,7 +86,7 @@ function AppLayout() {
     >
       <Layout className="layout" hasSider>
         <Sider
-          width={200}
+          style={siderStyle}
           collapsible
           collapsed={collapsed}
           onCollapse={(value) => setCollapsed(value)}
@@ -89,6 +97,7 @@ function AppLayout() {
             selectedKeys={[getSelectedKey()]}
             mode="inline"
             items={menus}
+            style={{border: 'none'}}
             onClick={(e) => {
               navigate(`/${e.key}`);
             }}
