@@ -422,7 +422,7 @@ export const CityPage = () => {
 
   // 测试数据读取
   // useEffect(() => {
-  //   readCityCSVData("putian", "莆田").then((data) => {
+  //   readCityCSVData("zhengzhou", "郑州").then((data) => {
   //     console.log(data);
   //   });
   // }, []);
