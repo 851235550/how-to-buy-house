@@ -211,14 +211,23 @@ export const HomePage = () => {
     yField: "price",
     colorField: "city", // 按城市区分颜色
     shapeField: "smooth",
-    scale: {
-      y: {
-        nice: true, // 自动调整刻度为美观的数值
-      },
+    xAxis: {
+      nice: true,
+      tickCount: 8, // 控制刻度数量
     },
-    interaction: {
-      tooltip: {
-        marker: false,
+    yAxis: {
+      nice: true,
+      tickCount: 6, // 控制刻度数量
+    },
+    tooltip: {
+      title: (d: any) => {
+        // 格式化 X 轴数据（月份）
+        if (d.month && d.month.length === 6) {
+          const year = d.month.substring(0, 4);
+          const month = d.month.substring(4, 6);
+          return `${year}-${month}`;
+        }
+        return d.month;
       },
     },
     style: {

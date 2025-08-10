@@ -363,14 +363,26 @@ const PriceChart = ({ chartData }: { chartData: any[] }) => {
     yField: "price",
     colorField: "city",
     shapeField: "smooth",
-    scale: {
-      y: {
-        nice: true,
-      },
+    xAxis: {
+      nice: true,
+      tickCount: 8, // 控制刻度数量
+    },
+    yAxis: {
+      nice: true,
+      tickCount: 6, // 控制刻度数量
     },
     tooltip: {
       channel: "y",
       valueFormatter: (d: any) => `${d}元/m²`,
+      title: (d: any) => {
+        // 格式化 X 轴数据（月份）
+        if (d.month && d.month.length === 6) {
+          const year = d.month.substring(0, 4);
+          const month = d.month.substring(4, 6);
+          return `${year}-${month}`;
+        }
+        return d.month;
+      },
     },
     style: {
       lineWidth: 2,
