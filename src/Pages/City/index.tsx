@@ -372,8 +372,6 @@ const PriceChart = ({ chartData }: { chartData: any[] }) => {
       tickCount: 6, // 控制刻度数量
     },
     tooltip: {
-      channel: "y",
-      valueFormatter: (d: any) => `${d}元/m²`,
       title: (d: any) => {
         // 格式化 X 轴数据（月份）
         if (d.month && d.month.length === 6) {
@@ -383,6 +381,12 @@ const PriceChart = ({ chartData }: { chartData: any[] }) => {
         }
         return d.month;
       },
+      items: [
+        {
+          channel: "y",
+          valueFormatter: (d: any) => `${d}元/m²`,
+        },
+      ],
     },
     style: {
       lineWidth: 2,
